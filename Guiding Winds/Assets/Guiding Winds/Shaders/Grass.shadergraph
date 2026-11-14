@@ -6387,8 +6387,8 @@
     "m_ObjectId": "7f09bfcd4e95428db075194fdc6aabda",
     "m_Title": "Shadow/Bottom COlor",
     "m_Position": {
-        "x": -1871.000244140625,
-        "y": -45.000030517578128
+        "x": -1871.0,
+        "y": -45.0
     }
 }
 
@@ -7802,8 +7802,8 @@
     "m_ObjectId": "a088911ceeea473393097e22ed2fb1f3",
     "m_Title": "Depth Color",
     "m_Position": {
-        "x": -2732.000244140625,
-        "y": -1142.0001220703125
+        "x": -2732.0,
+        "y": -1142.0
     }
 }
 
@@ -9327,8 +9327,8 @@
     "m_ObjectId": "c6d17e33399649daa6fbff1681369e43",
     "m_Title": "Height Blend",
     "m_Position": {
-        "x": -1953.000244140625,
-        "y": 601.0001831054688
+        "x": -1953.0,
+        "y": 601.0
     }
 }
 
@@ -9338,7 +9338,7 @@
     "m_ObjectId": "c6d8e915c3904367908adc6e3be342cc",
     "m_Title": "Grass sway",
     "m_Position": {
-        "x": -2908.999755859375,
+        "x": -2909.0,
         "y": -2860.0
     }
 }
@@ -9355,9 +9355,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1258.9998779296875,
-            "y": -2565.0,
-            "width": 207.999755859375,
+            "x": -1288.0,
+            "y": -2544.0,
+            "width": 208.0,
             "height": 314.0
         }
     },
@@ -10524,7 +10524,7 @@
     "m_ObjectId": "e9c468c7f7d544dc9326b4bb5ee41458",
     "m_Title": "Terain Color",
     "m_Position": {
-        "x": -2492.000244140625,
+        "x": -2492.0,
         "y": -554.0
     }
 }
