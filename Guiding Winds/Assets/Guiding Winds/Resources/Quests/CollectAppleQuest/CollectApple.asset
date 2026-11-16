@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54cba1192f58d614683e05c757e57c40, type: 3}
+  m_Name: CollectApple
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quest.QuestInfo
+  <Id>k__BackingField: CollectApple
+  DisplayName: Collect the apple
+  PreRequisiteQuests: []
+  RepStatus: 0
+  QuestStepPrefabs:
+  - {fileID: 4131747343264943203, guid: 8996ddc5e6e13c844b07741626db449b, type: 3}
+  repReward: 15
