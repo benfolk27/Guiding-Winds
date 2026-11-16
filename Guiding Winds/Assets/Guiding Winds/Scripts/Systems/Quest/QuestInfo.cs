@@ -17,12 +17,14 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quest
         [Header("Requirements")]
         public QuestInfo[] PreRequisiteQuests;
         public RepStatus RepStatus;
+        // quest giver?
 
         [Header("Steps")]
         public GameObject[] QuestStepPrefabs;
 
         [Header("Rewards")]
         public int repReward;
+        // currency reward?
 
         private void OnValidate()
         {
