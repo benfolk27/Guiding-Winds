@@ -2939,7 +2939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.NPCs.NPCGenerator
   NPCPrefab: {fileID: 5615815006576956137}
   Area: {fileID: 1167949966}
-  Count: 25
+  Count: 3
 --- !u!1001 &2066858905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3608,15 +3608,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b1787a7070753594996dac074aee4532, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1787a7070753594996dac074aee4532, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.403
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1787a7070753594996dac074aee4532, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.545
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b1787a7070753594996dac074aee4532, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4660,7 +4660,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: bd55bde06637a1d4b9cefa8cd7ceba03, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 1
