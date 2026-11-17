@@ -11,5 +11,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7bf16cf84c137c4186682bb9510ea75, type: 3}
   m_Name: AppleObject
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quest.QuestObject
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quests.QuestObject
   DisplayName: juicy apple

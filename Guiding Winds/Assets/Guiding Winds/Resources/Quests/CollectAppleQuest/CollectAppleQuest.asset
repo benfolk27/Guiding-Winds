@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54cba1192f58d614683e05c757e57c40, type: 3}
-  m_Name: CollectApple
-  m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quest.QuestInfo
-  <Id>k__BackingField: CollectApple
+  m_Name: CollectAppleQuest
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quests.QuestInfo
+  <Id>k__BackingField: CollectAppleQuest
   DisplayName: Collect the apple
+  Description: 
   PreRequisiteQuests: []
   RepStatus: 0
   QuestStepPrefabs:

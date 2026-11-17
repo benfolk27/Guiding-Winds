@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Assets.Guiding_Winds.Scripts.Systems.Quest
+namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 {
     [CreateAssetMenu(fileName = "QuestInfo", menuName = "ScriptableObjects/QuestInfo", order = 1)]
     public class QuestInfo : ScriptableObject
@@ -13,6 +13,8 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quest
 
         [Header("General")]
         public string DisplayName;
+
+        public string Description;
 
         [Header("Requirements")]
         public QuestInfo[] PreRequisiteQuests;

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Assets.Guiding_Winds.Scripts.Systems.Quest
+namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 {
     public abstract class QuestStep : MonoBehaviour
     {

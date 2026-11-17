@@ -1,29 +1,48 @@
-﻿using System.Collections;
+﻿using StarterAssets;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using StarterAssets;
-
 
 namespace Assets.Guiding_Winds.Scripts.Systems
 {
-    [RequireComponent(typeof(PlayerInput))]
+    // bc we are using unity third person controller for input
+    [RequireComponent(typeof(PlayerInput), typeof(StarterAssetsInputs))]
     public class InputManager : MonoBehaviour
     {
-        // bc we are using unity third person controller for input
         private StarterAssetsInputs starterInputs;
 
         private void Awake()
         {
             starterInputs = GetComponent<StarterAssetsInputs>();
         }
-        public void MovePressed(InputAction.CallbackContext context)
+
+        private void OnEnable()
         {
-            if (context.performed || context.canceled)
-            {
-                Vector2 movement = context.ReadValue<Vector2>();
-                starterInputs.MoveInput(movement);
-                GameEventsManager.Instance.inputEvents.MovePressed(movement);
-            }
+            starterInputs.OnMoveEvent += MovePressed;
+        }
+
+        private void OnDisable()
+        {
+            starterInputs.OnMoveEvent -= MovePressed;
+        }
+
+        private void MovePressed(Vector2 movement)
+        {
+            Debug.Log("Move pressed: " + movement);
+            GameEventsManager.Instance.InputEvents.MovePressed(movement);
+        }
+
+        public void OnSubmit(InputValue value)
+        {
+            if (value.isPressed)
+                Debug.Log("Submit pressed");
+                GameEventsManager.Instance.InputEvents.SubmitPressed();
+        }
+
+        public void OnQuestLogToggle(InputValue value)
+        {
+            if (value.isPressed)
+                Debug.Log("Quest Log Toggle pressed");
+                GameEventsManager.Instance.InputEvents.QuestLogTogglePressed();
         }
     }
 }

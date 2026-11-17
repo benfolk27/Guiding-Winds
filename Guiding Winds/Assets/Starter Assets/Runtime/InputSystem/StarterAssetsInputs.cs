@@ -27,6 +27,8 @@ namespace StarterAssets
 			MoveInput(value.Get<Vector2>());
 		}
 
+		public event System.Action<Vector2> OnMoveEvent;
+
 		public void OnLook(InputValue value)
 		{
 			if(cursorInputForLook)
@@ -51,6 +53,7 @@ namespace StarterAssets
 		public void MoveInput(Vector2 newMoveDirection)
 		{
 			move = newMoveDirection;
+			OnMoveEvent?.Invoke(newMoveDirection);
 		} 
 
 		public void LookInput(Vector2 newLookDirection)
