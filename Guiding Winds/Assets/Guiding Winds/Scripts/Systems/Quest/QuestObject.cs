@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Guiding_Winds.Scripts.Systems.Quest
+namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 {
     [CreateAssetMenu(menuName = "Quests/Quest Object")]
     public class QuestObject : ScriptableObject

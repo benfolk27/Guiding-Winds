@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Guiding_Winds.Scripts.Player;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -13,9 +14,15 @@ namespace Assets.Guiding_Winds.Scripts.Systems
         }
 
         public event Action<int> OnPlayerRepChange;
-        public void PlayerRepChange(int experience)
+        public void PlayerRepChange(int rep)
         {
-            OnPlayerRepChange?.Invoke(experience);
+            OnPlayerRepChange?.Invoke(rep);
+        }
+
+        public event Action<RepStatus> OnRepStatusChange;
+        public void PlayerRepStatusChange(RepStatus reps)
+        {
+            OnRepStatusChange?.Invoke(reps);
         }
     }
 }

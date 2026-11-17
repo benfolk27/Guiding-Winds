@@ -1,5 +1,5 @@
 ﻿using Assets.Guiding_Winds.Scripts.Systems;
-using Assets.Guiding_Winds.Scripts.Systems.Quest;
+using Assets.Guiding_Winds.Scripts.Systems.Quests;
 using UnityEngine;
 
 public class CollectQuestStep : QuestStep
@@ -11,12 +11,12 @@ public class CollectQuestStep : QuestStep
 
     private void OnEnable()
     {
-        GameEventsManager.Instance.questEvents.OnObjectCollected += ObjectCollected;
+        GameEventsManager.Instance.QuestEvents.OnObjectCollected += ObjectCollected;
     }
 
     private void OnDisable()
     {
-        GameEventsManager.Instance.questEvents.OnObjectCollected -= ObjectCollected;
+        GameEventsManager.Instance.QuestEvents.OnObjectCollected -= ObjectCollected;
     }
 
     private void ObjectCollected(QuestObject CollectedObject)

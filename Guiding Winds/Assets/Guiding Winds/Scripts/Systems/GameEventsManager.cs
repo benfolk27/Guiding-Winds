@@ -1,4 +1,5 @@
 using UnityEngine;
+using Assets.Guiding_Winds.Scripts.Systems.Quests;
 
 namespace Assets.Guiding_Winds.Scripts.Systems
 {
@@ -6,10 +7,9 @@ namespace Assets.Guiding_Winds.Scripts.Systems
     {
         public static GameEventsManager Instance { get; private set; }
 
-        public QuestEvents questEvents;
-
-        public InputEvents inputEvents;
-        public PlayerEvents playerEvents;
+        public QuestEvents QuestEvents;
+        public InputEvents InputEvents;
+        public PlayerEvents PlayerEvents;
 
         private void Awake()
         {
@@ -18,9 +18,9 @@ namespace Assets.Guiding_Winds.Scripts.Systems
                 Debug.LogError("Found more than one Game Events Manager in the scene.");
             }
             Instance = this;
-            questEvents = new QuestEvents();
-            inputEvents = new InputEvents();
-            playerEvents = new PlayerEvents();
+            QuestEvents = new QuestEvents();
+            InputEvents = new InputEvents();
+            PlayerEvents = new PlayerEvents();
         }
     }
 }

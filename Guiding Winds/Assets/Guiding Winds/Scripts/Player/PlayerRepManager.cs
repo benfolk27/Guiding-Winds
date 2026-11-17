@@ -9,50 +9,55 @@ namespace Assets.Guiding_Winds.Scripts.Player
         [Header("Configuration")]
         [SerializeField] private int startingRep = 0;
 
-        private int currentRep;
+        private int CurrentRep;
 
-        public RepStatus RepStatus;
+        private RepStatus RepStatus;
 
         private void Awake()
         {
-            currentRep = startingRep;
+            CurrentRep = startingRep;
             RepStatus = RepStatus.UNKNOWN;
         }
 
         private void OnEnable()
         {
-            GameEventsManager.Instance.playerEvents.OnRepGained += RepGained;
+            GameEventsManager.Instance.PlayerEvents.OnRepGained += RepGained;
         }
 
         private void OnDisable()
         {
-            GameEventsManager.Instance.playerEvents.OnRepGained -= RepGained;
+            GameEventsManager.Instance.PlayerEvents.OnRepGained -= RepGained;
         }
 
         private void Start()
         {
-            GameEventsManager.Instance.playerEvents.PlayerRepChange(currentRep);
+            GameEventsManager.Instance.PlayerEvents.PlayerRepChange(CurrentRep);
+            GameEventsManager.Instance.PlayerEvents.PlayerRepStatusChange(RepStatus);
         }
 
         private void RepGained(int rep)
         {
-            currentRep += rep;
+            CurrentRep += rep;
             UpdateRepStatus();
-            GameEventsManager.Instance.playerEvents.PlayerRepChange(currentRep);
+            GameEventsManager.Instance.PlayerEvents.PlayerRepChange(CurrentRep);
         }
 
         private void UpdateRepStatus()
         {
-            if (currentRep >= 1000)
+            RepStatus previousStatus = RepStatus;
+            if (CurrentRep >= 1000)
                 RepStatus = RepStatus.EXALTED;
-            else if (currentRep >= 500)
+            else if (CurrentRep >= 500)
                 RepStatus = RepStatus.TRUSTED;
-            else if (currentRep >= 200)
+            else if (CurrentRep >= 200)
                 RepStatus = RepStatus.FRIENDLY;
-            else if (currentRep >= 50)
+            else if (CurrentRep >= 50)
                 RepStatus = RepStatus.ACCQUAINTANCE;
             else
                 RepStatus = RepStatus.UNKNOWN;
+
+            if (previousStatus != RepStatus)
+                GameEventsManager.Instance.PlayerEvents.PlayerRepStatusChange(RepStatus);
         }
     }
 
