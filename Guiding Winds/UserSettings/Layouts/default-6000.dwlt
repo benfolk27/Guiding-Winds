@@ -246,8 +246,8 @@ MonoBehaviour:
     y: 0
     width: 332
     height: 716.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -660,7 +660,7 @@ MonoBehaviour:
     m_SaveData:
     - dockPosition: 0
       containerId: overlay-toolbar__top
-      displayed: 0
+      displayed: 1
       id: Brush Attributes
       index: 0
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -758,7 +758,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 0
+      displayed: 1
       id: Terrain Tools
       index: 0
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -772,12 +772,12 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 0
+      displayed: 1
       id: Brush Masks
       index: 2
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
-      collapsed: 0
+      collapsed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1122,12 +1122,12 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 0
+      displayed: 1
       id: Brush Filters
       index: 1
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
-      collapsed: 0
+      collapsed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1191,9 +1191,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 162.74786, y: 4.4953613, z: 68.790726}
+    m_Target: {x: 133.22514, y: 10.3084, z: 82.825836}
     speed: 2
-    m_Value: {x: 162.74786, y: 4.4953613, z: 68.790726}
+    m_Value: {x: 133.22514, y: 10.3084, z: 82.825836}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1240,17 +1240,17 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.4071106, y: 0.52982277, z: -0.32153738, w: -0.6709876}
+    m_Target: {x: 0.5424146, y: -0.45552582, z: 0.53018844, w: 0.4660302}
     speed: 2
-    m_Value: {x: -0.40467998, y: 0.5309605, z: -0.3196179, w: -0.67242795}
+    m_Value: {x: -0.5424146, y: 0.45552582, z: -0.5301885, w: -0.4660302}
   m_Size:
-    m_Target: 59.914486
+    m_Target: 68.8347
     speed: 2
-    m_Value: 62.737682
+    m_Value: 65.87053
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1.6418003
     m_SpeedNormalized: 0.8200002
@@ -1322,22 +1322,11 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: -562068
+      - m_Data: 55140
       m_LastClickedID:
-        m_Data: -562068
+        m_Data: 55140
       m_ExpandedIDs:
-      - m_Data: -345556
-      - m_Data: -28578
       - m_Data: -1620
-      - m_Data: 54720
-      - m_Data: 54732
-      - m_Data: 54768
-      - m_Data: 54948
-      - m_Data: 54990
-      - m_Data: 55024
-      - m_Data: 55028
-      - m_Data: 55238
-      - m_Data: 55282
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1412,8 +1401,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Enemy Environment
+    m_Folders: []
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1436,8 +1424,8 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56272
-    - m_Data: 56274
+    - m_Data: 56662
+    - m_Data: 56664
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1465,15 +1453,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 216.80002}
     m_SelectedIDs:
-    - m_Data: -562068
+    - m_Data: 55140
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56272
-    - m_Data: 56666
+    - m_Data: 56662
+    - m_Data: 56664
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1502,9 +1490,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -562068
+    - m_Data: 55140
     m_LastClickedEntityId:
-      m_Data: -562068
+      m_Data: 55140
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
