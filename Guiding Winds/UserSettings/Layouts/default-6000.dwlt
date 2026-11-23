@@ -758,7 +758,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 1
+      displayed: 0
       id: Terrain Tools
       index: 0
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -1136,7 +1136,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-container--right
-      displayed: 1
+      displayed: 0
       id: brush-info-overlay
       index: 13
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -1191,9 +1191,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 166.94783, y: 70.44536, z: 166.66016}
+    m_Target: {x: 168.8025, y: -4.89128, z: 171.83282}
     speed: 2
-    m_Value: {x: 166.94783, y: 70.44536, z: 166.66016}
+    m_Value: {x: 168.8025, y: -4.89128, z: 171.83282}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1215,7 +1215,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_OffsetAlongAxis: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1231,7 +1231,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_OffsetAlongAxis: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1240,13 +1240,13 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: 0.21496269, y: -0.7403759, z: 0.277666, w: 0.5731821}
+    m_Target: {x: 0.35924828, y: -0.50275224, z: 0.24137096, w: 0.7482807}
     speed: 2
-    m_Value: {x: 0.21388634, y: -0.7392991, z: 0.27423045, w: 0.57661706}
+    m_Value: {x: 0.3592477, y: -0.50275147, z: 0.24137059, w: 0.7482796}
   m_Size:
-    m_Target: 24.379017
+    m_Target: 155.05933
     speed: 2
-    m_Value: 24.379017
+    m_Value: 155.05933
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1321,16 +1321,16 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs:
-      - m_Data: 55148
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: 55148
+        m_Data: 0
       m_ExpandedIDs:
       - m_Data: -1620
-      - m_Data: 54798
-      - m_Data: 54820
-      - m_Data: 55074
-      - m_Data: 55122
+      - m_Data: 54804
+      - m_Data: 54826
+      - m_Data: 55088
+      - m_Data: 55094
+      - m_Data: 55140
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1428,8 +1428,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56756
-    - m_Data: 56758
+    - m_Data: 56778
+    - m_Data: 56780
+    - m_Data: 56782
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1458,19 +1459,18 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 104}
-    m_SelectedIDs:
-    - m_Data: 55148
+    m_SelectedIDs: []
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56756
-    - m_Data: 56758
-    - m_Data: 57162
+    - m_Data: 56778
+    - m_Data: 56780
+    - m_Data: 56782
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: snow texture
-      m_OriginalName: snow texture
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1478,10 +1478,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 56566
+        m_Data: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 2}
@@ -1494,10 +1494,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs:
-    - m_Data: 55148
+    m_SelectedInstanceIDs: []
     m_LastClickedEntityId:
-      m_Data: 55148
+      m_Data: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
