@@ -26,6 +26,13 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             OnQuestCompleted?.Invoke(questId);
         }
 
+        public event Action<string> OnFinishQuest;
+
+        public void FinishQuest(string id)
+        {
+            OnFinishQuest?.Invoke(id);
+        }
+
         // Quest state events
         public event Action<Quest> OnQuestStateChange;
 

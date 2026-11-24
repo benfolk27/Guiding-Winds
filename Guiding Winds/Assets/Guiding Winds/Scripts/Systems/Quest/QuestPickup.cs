@@ -1,14 +1,20 @@
 ﻿using Assets.Guiding_Winds.Scripts.Systems;
 using UnityEngine;
 
+
 namespace Assets.Guiding_Winds.Scripts.Systems.Quests {
     public class QuestPickup : MonoBehaviour
     {
         [SerializeField] private QuestObject QuestObject;
-
+        
+        [SerializeField] private QuestInfo RequiredQuest;
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player") || QuestObject == null)
+                return;
+
+            QuestManager manager = FindFirstObjectByType<QuestManager>();
+            if (manager == null || !manager.IsQuestActive(RequiredQuest))
                 return;
 
             GameEventsManager.Instance.QuestEvents.ObjectCollected(QuestObject);

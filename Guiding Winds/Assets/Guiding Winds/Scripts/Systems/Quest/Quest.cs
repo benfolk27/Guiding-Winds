@@ -13,11 +13,38 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 
         // dynamic state
         public QuestState State;
+        private int CurrentQuestStepIndex;
 
         public Quest(QuestInfo questInfo)
         {
             info = questInfo;
             State = QuestState.REQUIREMENTS_NOT_MET;
+            CurrentQuestStepIndex = 0;
+        }
+
+        public void MoveToNextStep()
+        {
+            CurrentQuestStepIndex++;
+        }
+
+        public bool CurrentStepExists() => CurrentQuestStepIndex < info.QuestStepPrefabs.Length;
+
+        public void InstantiateCurrentQuestStep(Transform parentTransform)
+        {
+            GameObject prefab = GetCurrentQuestStepPrefab();
+            if (prefab != null)
+            {
+                GameObject.Instantiate(prefab, parentTransform);
+            }
+        }
+
+        private GameObject GetCurrentQuestStepPrefab()
+        {
+            if (CurrentStepExists())
+            {
+                return info.QuestStepPrefabs[CurrentQuestStepIndex];
+            }
+            return null;
         }
     }
 }
