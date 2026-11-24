@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CollectAppleQuest
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Guiding_Winds.Scripts.Systems.Quests.QuestInfo
   <Id>k__BackingField: CollectAppleQuest
-  DisplayName: Collect the apple
-  Description: 
+  DisplayName: Collect 15 apples.
+  Description: This old grandma is hungry. Please collect some apples for her!
   PreRequisiteQuests: []
   RepStatus: 0
   QuestStepPrefabs:
