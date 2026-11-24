@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43.2
+    y: 0
     width: 1536
     height: 36
   m_SerializedDataModeController:
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 1000.6
     height: 451.6
   m_SerializedDataModeController:
@@ -1242,11 +1242,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.5269672, y: 0.47300324, z: -0.5028879, w: -0.49567708}
     speed: 2
-    m_Value: {x: -0.5263672, y: 0.47360197, z: -0.5023153, w: -0.49630445}
+    m_Value: {x: -0.5269672, y: 0.47300324, z: -0.5028879, w: -0.49567708}
   m_Size:
     m_Target: 157.41106
     speed: 2
-    m_Value: 150.63258
+    m_Value: 157.41106
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1301,8 +1301,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1001.60004
-    y: 79.200005
+    x: 1002.6
+    y: 24
     width: 200.40002
     height: 690.8
   m_SerializedDataModeController:
@@ -1379,7 +1379,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 556.8
+    y: 501.6
     width: 1000.6
     height: 213.19998
   m_SerializedDataModeController:
@@ -1429,11 +1429,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 57466
-    - m_Data: 57468
-    - m_Data: 57470
-    - m_Data: 57472
-    - m_Data: 57474
+    - m_Data: 57502
+    - m_Data: 57504
+    - m_Data: 57506
+    - m_Data: 57508
+    - m_Data: 57510
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1467,11 +1467,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 57466
-    - m_Data: 57468
-    - m_Data: 57470
-    - m_Data: 57472
-    - m_Data: 57474
+    - m_Data: 57502
+    - m_Data: 57504
+    - m_Data: 57506
+    - m_Data: 57508
+    - m_Data: 57510
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1555,8 +1555,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1204
-    y: 79.200005
+    x: 1205
+    y: 24
     width: 331
     height: 690.8
   m_SerializedDataModeController:
