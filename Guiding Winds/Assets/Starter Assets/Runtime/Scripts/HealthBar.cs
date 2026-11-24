@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatBar : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public float max = 5f;
