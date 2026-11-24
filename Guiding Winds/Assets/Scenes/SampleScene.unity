@@ -3406,7 +3406,7 @@ MonoBehaviour:
   max: 100
   border: 30
   sprintRate: 10
-  recoverRate: 5
+  recoverRate: 10
   canSprint: 1
   sprint:
     m_Name: Sprint

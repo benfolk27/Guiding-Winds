@@ -39,7 +39,7 @@
                     "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -271,8 +271,8 @@
                 },
                 {
                     "name": "",
-                    "id": "f052540e-9173-4583-a55a-b0bb5653b2ae",
-                    "path": "<Keyboard>/shift",
+                    "id": "fb3e121a-d4c7-4b32-bb9e-c898b8eaab66",
+                    "path": "<Keyboard>/ctrl",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

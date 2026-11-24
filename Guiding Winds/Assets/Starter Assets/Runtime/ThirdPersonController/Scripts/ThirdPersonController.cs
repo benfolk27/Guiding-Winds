@@ -125,18 +125,6 @@ namespace StarterAssets
 
         [Header("Sprinting")] 
         public StaminaBar staminaBar;
-        public InputActionReference sprintAction;
-        private bool IsSprinting;
-
-        private void SprintStarted(InputAction.CallbackContext context)
-        {
-            IsSprinting = true;
-        }
-
-        private void SprintEnded(InputAction.CallbackContext context)
-        {
-            IsSprinting = false;
-        }
         
         
         private void Awake()
@@ -167,10 +155,6 @@ namespace StarterAssets
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
             
-            // sprinting stuff
-            sprintAction.action.Enable();
-            sprintAction.action.performed += SprintStarted;
-            sprintAction.action.canceled += SprintEnded;
         }
 
         private void Update()
@@ -233,9 +217,7 @@ namespace StarterAssets
         }
 
         private void Move()
-        {
-            // new addition: sprint check
-            _input.sprint = IsSprinting;
+        { 
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = (_input.sprint && staminaBar.canSprint) ? SprintSpeed : MoveSpeed;
 
