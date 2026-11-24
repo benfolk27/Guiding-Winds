@@ -758,7 +758,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 0
       containerId: overlay-toolbar__left
-      displayed: 0
+      displayed: 1
       id: Terrain Tools
       index: 0
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -1136,7 +1136,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-container--right
-      displayed: 0
+      displayed: 1
       id: brush-info-overlay
       index: 13
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":24.799999237060548},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -1191,9 +1191,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 168.8025, y: -4.89128, z: 171.83282}
+    m_Target: {x: 30.884836, y: -20.220484, z: 221.13292}
     speed: 2
-    m_Value: {x: 168.8025, y: -4.89128, z: 171.83282}
+    m_Value: {x: 30.884836, y: -20.220484, z: 221.13292}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1240,20 +1240,20 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: 0.35924828, y: -0.50275224, z: 0.24137096, w: 0.7482807}
+    m_Target: {x: 0.3940767, y: -0.1715564, z: 0.07513672, w: 0.89979446}
     speed: 2
-    m_Value: {x: 0.3592477, y: -0.50275147, z: 0.24137059, w: 0.7482796}
+    m_Value: {x: 0.394076, y: -0.17155609, z: 0.07513659, w: 0.89979285}
   m_Size:
-    m_Target: 155.05933
+    m_Target: 56.4516
     speed: 2
-    m_Value: 155.05933
+    m_Value: 54.020668
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.6418003
-    m_SpeedNormalized: 0.8200002
+    m_Speed: 1.5821004
+    m_SpeedNormalized: 0.7900002
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1321,20 +1321,26 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 55282
       m_LastClickedID:
-        m_Data: 0
+        m_Data: 55282
       m_ExpandedIDs:
+      - m_Data: -39536
+      - m_Data: -34556
+      - m_Data: -33766
+      - m_Data: -33356
+      - m_Data: -28670
+      - m_Data: -28508
+      - m_Data: -22780
+      - m_Data: -22070
       - m_Data: -1620
-      - m_Data: 54804
-      - m_Data: 54826
-      - m_Data: 55088
-      - m_Data: 55094
-      - m_Data: 55140
+      - m_Data: 54794
+      - m_Data: 54908
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: PlayerArmature
+        m_OriginalName: PlayerArmature
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -1342,10 +1348,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 0
+          m_Data: 55344
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 9}
@@ -1405,7 +1411,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/3d assets (environment)
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1428,9 +1435,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56778
-    - m_Data: 56780
     - m_Data: 56782
+    - m_Data: 56784
+    - m_Data: 56786
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1458,19 +1465,22 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 104}
-    m_SelectedIDs: []
+    scrollPos: {x: 0, y: 240}
+    m_SelectedIDs:
+    - m_Data: 55282
     m_LastClickedID:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 56778
-    - m_Data: 56780
     - m_Data: 56782
+    - m_Data: 56784
+    - m_Data: 56786
+    - m_Data: 57194
+    - m_Data: 57244
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: barrel
+      m_OriginalName: barrel
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
@@ -1478,10 +1488,10 @@ MonoBehaviour:
         width: 0
         height: 0
       m_UserData:
-        m_Data: 0
+        m_Data: 57394
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 2}
@@ -1494,9 +1504,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
+    m_SelectedInstanceIDs:
+    - m_Data: 55282
     m_LastClickedEntityId:
-      m_Data: 0
+      m_Data: 55282
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: []
     m_RenameOverlay:
