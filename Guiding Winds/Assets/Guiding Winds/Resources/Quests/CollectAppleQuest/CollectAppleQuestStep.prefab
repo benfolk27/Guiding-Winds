@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectQuestStep
   RequiredObject: {fileID: 11400000, guid: 459b54c60b0242844b5000a767c8ae9c, type: 2}
-  RequiredCount: 15
+  RequiredCount: 1

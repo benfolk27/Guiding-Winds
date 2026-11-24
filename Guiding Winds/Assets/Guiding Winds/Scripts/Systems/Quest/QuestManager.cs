@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Assets.Guiding_Winds.Scripts.Player;
 using UnityEngine.Windows;
+using System;
 
 namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 {
@@ -26,12 +27,20 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             GameEventsManager.Instance.QuestEvents.OnQuestStarted += StartQuest;
             GameEventsManager.Instance.QuestEvents.OnQuestAdvance += AdvanceQuest;
             GameEventsManager.Instance.QuestEvents.OnFinishQuest += FinishQuest;
+
+            GameEventsManager.Instance.PlayerEvents.OnRepStatusChange += RepStatusChange;
         }
         private void OnDisable()
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStarted -= StartQuest;
             GameEventsManager.Instance.QuestEvents.OnQuestAdvance -= AdvanceQuest;
             GameEventsManager.Instance.QuestEvents.OnFinishQuest -= FinishQuest;
+            GameEventsManager.Instance.PlayerEvents.OnRepStatusChange -= RepStatusChange;
+        }
+
+        private void RepStatusChange(RepStatus status)
+        {
+            CurrentPlayerRepStatus = status;
         }
 
         private Quest GetQuestById(string id) => QuestMap[id];
@@ -47,7 +56,14 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
         {
             Quest quest = GetQuestById(questId);
             quest.MoveToNextStep();
-            quest.InstantiateCurrentQuestStep(this.transform);
+            if (quest.CurrentStepExists())
+            {
+                quest.InstantiateCurrentQuestStep(this.transform);
+            }
+            else
+            {
+                ChangeQuestState(quest.info.Id, QuestState.CAN_FINISH);
+            }
         }
 
         private void FinishQuest(string questId)
