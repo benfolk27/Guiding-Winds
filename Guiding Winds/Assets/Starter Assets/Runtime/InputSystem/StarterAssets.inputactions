@@ -39,7 +39,7 @@
                     "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "initialStateCheck": false
                 },
                 {
@@ -289,17 +289,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f052540e-9173-4583-a55a-b0bb5653b2ae",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SideDash",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8f91c12e-bee7-4e71-b81f-89660588b69a",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -317,6 +306,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "HeavyAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ad53e29-2ac3-472f-a3f0-be38dba431a3",
+                    "path": "<Keyboard>/ctrl",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SideDash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
