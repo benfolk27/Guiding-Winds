@@ -17,7 +17,7 @@ Shader "Custom/Fire"
         [Header(Flame Gradient)]
         [HDR] _CoreColor("Core Color", Color) = (3.0, 2.2, 0.5, 1)
         [HDR] _MidColor("Mid Color", Color) = (2.0, 0.5, 0.05, 1)
-        _TipColor("Tip Color", Color) = (0.4, 0.03, 0.01, 1)
+        _TipColor("Tip Color", Color) = (0.4, 0.03, 0.01, 0)
     }
 
     SubShader
@@ -108,7 +108,10 @@ Shader "Custom/Fire"
 
                 //finalRGB *= mainTex.rgb;
 
-                half alpha = saturate(intensity * 1.4) * mainTex.a;
+                float tipReach = saturate(1.0 - smoothstep(0.35, 1.0, IN.rawUV.y));
+                float tipDissolve = smoothstep(0.15, 0.65, noise * tipReach);
+                half alpha = saturate(intensity * 1.4) * mainTex.a * tipDissolve;
+                //half alpha = saturate(intensity * 1.4) * mainTex.a;
 
                 //todo: add some nvironment distoritons
 
