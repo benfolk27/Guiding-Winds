@@ -7,6 +7,12 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
     {
 
         private bool IsFinished = false;
+        private string QuestId;
+
+        public void InitializeQuestStep(string questId)
+        {
+            QuestId = questId;
+        }
 
         protected void FinishQuestStep()
         {
@@ -14,7 +20,7 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             {
                 IsFinished = true;
 
-                // send event to move onto next step
+                GameEventsManager.Instance.QuestEvents.QuestAdvance(QuestId);
 
                 Destroy(gameObject);
             }

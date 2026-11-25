@@ -146,6 +146,11 @@ namespace StarterAssets
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
+
+            if (staminaBar == null)
+            {
+                staminaBar = transform.Find("Canvas/StatBars/StaminaSlider").GetComponent<StaminaBar>();
+            }
         }
 
         private void Start()

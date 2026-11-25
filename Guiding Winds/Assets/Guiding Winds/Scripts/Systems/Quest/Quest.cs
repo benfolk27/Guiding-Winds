@@ -34,7 +34,9 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             GameObject prefab = GetCurrentQuestStepPrefab();
             if (prefab != null)
             {
-                GameObject.Instantiate(prefab, parentTransform);
+                GameObject.Instantiate(prefab, parentTransform)
+                    .GetComponent<QuestStep>()
+                    .InitializeQuestStep(info.Id);
             }
         }
 
