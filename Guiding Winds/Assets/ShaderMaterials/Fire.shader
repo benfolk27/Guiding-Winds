@@ -6,6 +6,7 @@ Shader "Custom/Fire"
         [MainTexture] _MainTex("Main Texture", 2D) = "white" {}
         _BaseMap("Noise", 2D) = "white" {}
 
+        _GlowIntensity("Glow Intensity", Range(0, 6)) = 1.5
         [Header(Flame Motion)]
 
         // movement of flame
@@ -62,6 +63,7 @@ Shader "Custom/Fire"
             SAMPLER(sampler_BaseMap);
 
             CBUFFER_START(UnityPerMaterial)
+                half _GlowIntensity;
                 half4 _BaseColor;
                 float4 _MainTex_ST;
                 float4 _BaseMap_ST;
@@ -94,20 +96,17 @@ Shader "Custom/Fire"
                 half noiseB = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, scrolledUV * 1.65 - float2(0.0, _Time.y * 0.8)).r;
                 half noise = lerp(noiseA, noiseB, 0.5);
 
-                float2 distortedRawUV = IN.rawUV;
-                distortedRawUV.x += (noise - 0.5) * _DistortionStrength;
-
-                float horizontalMask = 1.0 - abs(distortedRawUV.x * 2.0 - 1.0);
-                horizontalMask = saturate(horizontalMask * lerp(1.6, 0.4, saturate(IN.rawUV.y)));
                 float verticalFade = saturate(1.0 - smoothstep(0.15, 1.0, IN.rawUV.y));
-
-                half flameShape = noise * horizontalMask * verticalFade;
-
+                half flameShape = noise * verticalFade;
                 
                 half intensity = pow(saturate(flameShape * 2.2), _FlamePower);
                 half3 midBlend = lerp(_TipColor.rgb, _MidColor.rgb, smoothstep(0.1, 0.55, intensity));
                 half3 finalRGB = lerp(midBlend, _CoreColor.rgb, smoothstep(0.55, 1.0, intensity));
-                finalRGB *= mainTex.rgb;
+
+                half glowMask = smoothstep(0.35, 0.9, intensity);
+                finalRGB *= lerp(1.0, _GlowIntensity, glowMask);
+
+                //finalRGB *= mainTex.rgb;
 
                 half alpha = saturate(intensity * 1.4) * mainTex.a;
 

@@ -28,12 +28,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2:
+<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 0273945efe71b88439e0195c2871d7c7, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: 16125a1a120bd5642bf8a7e45a926332, type: 3}
+>>>>>>> 065ef65af55239a5d0edfb5a36397f359bde8851
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+<<<<<<< HEAD
     - _Blend: 0.98840654
+=======
+    - _Blend: 0.9947975
+>>>>>>> 065ef65af55239a5d0edfb5a36397f359bde8851
     - _Exposure1: 1
     - _Exposure2: 1
     - _ImageType: 0
