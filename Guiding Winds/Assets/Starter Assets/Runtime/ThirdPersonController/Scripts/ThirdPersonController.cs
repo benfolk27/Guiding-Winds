@@ -130,12 +130,7 @@ namespace StarterAssets
 
         private void SprintStarted(InputAction.CallbackContext context)
         {
-            IsSprinting = true;
-        }
-
-        private void SprintEnded(InputAction.CallbackContext context)
-        {
-            IsSprinting = false;
+            IsSprinting = !IsSprinting;
         }
         
         
@@ -175,7 +170,6 @@ namespace StarterAssets
             // sprinting stuff
             sprintAction.action.Enable();
             sprintAction.action.performed += SprintStarted;
-            sprintAction.action.canceled += SprintEnded;
         }
 
         private void Update()
