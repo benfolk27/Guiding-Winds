@@ -29,8 +29,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FlapAmount: 0.25
-    - _FlapSpeed: 2
+    - _Cutoff: 0.5
+    - _FlapAmount: 10
+    - _FlapSpeed: 5
+    - _UVScale: 1
     - _UseTextureOnly: 0
     m_Colors:
     - _BgColor: {r: 0.09999997, g: 0.09999997, b: 0.13999996, a: 1}
