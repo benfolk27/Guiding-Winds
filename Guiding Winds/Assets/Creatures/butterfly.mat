@@ -27,11 +27,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7ec7cb51257d3b67d904255f7cbb9a65, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _PartMask:
+        m_Texture: {fileID: 2800000, guid: e5ef7f5c40c2beef79770d9fe8656c8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _CenterU: 0.68
     - _Cutoff: 0.5
-    - _FlapAmount: 5
-    - _FlapSpeed: 2
+    - _FlapAmount: 0.1
+    - _FlapSpeed: 10
     - _UVScale: 1
     - _UseTextureOnly: 0
     m_Colors:
