@@ -24,9 +24,22 @@ public class CollectQuestStep : QuestStep
         if (RequiredObject == null || CollectedObject != RequiredObject)
             return;
 
+        UpdateState();
         CollectedCount++;
 
         if (CollectedCount >= RequiredCount)
             FinishQuestStep();
+    }
+
+    private void UpdateState()
+    {
+        string state = CollectedCount.ToString();
+        base.ChangeState(state);
+    }
+
+    protected override void SetQuestStepState(string state)
+    {
+        CollectedCount = int.Parse(state);
+        UpdateState();
     }
 }

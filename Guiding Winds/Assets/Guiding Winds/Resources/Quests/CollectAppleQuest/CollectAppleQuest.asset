@@ -19,4 +19,4 @@ MonoBehaviour:
   RepStatus: 0
   QuestStepPrefabs:
   - {fileID: 4131747343264943203, guid: 8996ddc5e6e13c844b07741626db449b, type: 3}
-  repReward: 15
+  RepReward: 0

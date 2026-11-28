@@ -10,7 +10,7 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 {
     public class QuestManager : MonoBehaviour
     {   
-         [Header("Config")]
+        [Header("Config")]
         [SerializeField] private bool loadQuestState = true;
 
         private RepStatus CurrentPlayerRepStatus;
@@ -29,6 +29,8 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             GameEventsManager.Instance.QuestEvents.OnFinishQuest += FinishQuest;
 
             GameEventsManager.Instance.PlayerEvents.OnRepStatusChange += RepStatusChange;
+
+            GameEventsManager.Instance.QuestEvents.OnQuestStepStateChange += QuestStepStateChange;
         }
         private void OnDisable()
         {
@@ -36,6 +38,7 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             GameEventsManager.Instance.QuestEvents.OnQuestAdvance -= AdvanceQuest;
             GameEventsManager.Instance.QuestEvents.OnFinishQuest -= FinishQuest;
             GameEventsManager.Instance.PlayerEvents.OnRepStatusChange -= RepStatusChange;
+            GameEventsManager.Instance.QuestEvents.OnQuestStepStateChange -= QuestStepStateChange;
         }
 
         private void RepStatusChange(RepStatus status)
@@ -69,7 +72,13 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
         private void FinishQuest(string questId)
         {
             Quest quest = GetQuestById(questId);
+            ClaimRewards(quest);
             ChangeQuestState(quest.info.Id, QuestState.FINISHED);
+        }
+
+        private void ClaimRewards(Quest quest)
+        {
+            GameEventsManager.Instance.PlayerEvents.RepGained(quest.info.RepReward);
         }
 
         public bool IsQuestActive(QuestInfo questInfo)
@@ -84,6 +93,10 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             // Show all initial state of quests
             foreach (var quest in QuestMap.Values)
             {
+                if (quest.State == QuestState.IN_PROGRESS)
+                {
+                   quest.InstantiateCurrentQuestStep(transform);
+                }
                 GameEventsManager.Instance.QuestEvents.QuestStateChange(quest);
             }
         }
@@ -133,29 +146,70 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
 
         private Dictionary<string, Quest> CreateQuestMap()
         {
+            // loads all QuestInfo Scriptable Objects under the Assets/Resources/Quests folder
             QuestInfo[] allQuests = Resources.LoadAll<QuestInfo>("Quests");
-            Dictionary<string, Quest> IdToQuestMap = new();
+            // Create the quest map
+            Dictionary<string, Quest> idToQuestMap = new Dictionary<string, Quest>();
             foreach (QuestInfo questInfo in allQuests)
             {
-                if (IdToQuestMap.ContainsKey(questInfo.Id))
+                if (idToQuestMap.ContainsKey(questInfo.Id))
                 {
                     Debug.LogWarning("Duplicate ID found when creating quest map: " + questInfo.Id);
                 }
-                IdToQuestMap.Add(questInfo.Id, LoadQuest(questInfo));
+                idToQuestMap.Add(questInfo.Id, LoadQuest(questInfo));
             }
-            return IdToQuestMap;
+            return idToQuestMap;
+        }
+
+        private void QuestStepStateChange(string questId, int stepIndex, QuestStepState state)
+        {
+            Quest quest = GetQuestById(questId);
+            quest.StoreQuestStepState(stepIndex, state);
+            ChangeQuestState(questId, quest.State);
+        }
+
+        private void OnApplicationQuit()
+        {
+            foreach (var quest in QuestMap.Values)
+            {
+                QuestData questData = quest.GetQuestData();
+                Debug.Log("State of quest " + quest.info.Id + ": " + questData.State);
+                //SaveQuest(quest);
+            }
+        }
+
+        private void SaveQuest(Quest quest)
+        {
+            try 
+            {
+                QuestData questData = quest.GetQuestData();
+                // serialize using JsonUtility, but use whatever you want here (like JSON.NET)
+                string serializedData = JsonUtility.ToJson(questData);
+                // saving to PlayerPrefs is just a quick example for this tutorial video,
+                // you probably don't want to save this info there long-term.
+                // instead, use an actual Save & Load system and write to a file, the cloud, etc..
+                PlayerPrefs.SetString(quest.info.Id, serializedData);
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Failed to save quest with id " + quest.info.Id + ": " + e);
+            }
         }
 
         private Quest LoadQuest(QuestInfo questInfo)
         {
             Quest quest = null;
-            try
+            try 
             {
-                if (PlayerPrefs.HasKey(questInfo.Id))
+                // load quest from saved data
+                if (PlayerPrefs.HasKey(questInfo.Id) && loadQuestState)
                 {
                     string serializedData = PlayerPrefs.GetString(questInfo.Id);
+                    QuestData questData = JsonUtility.FromJson<QuestData>(serializedData);
+                    quest = new Quest(questInfo, questData.State, questData.QuestStepIndex, questData.QuestStepStates);
                 }
-                else
+                // otherwise, initialize a new quest
+                else 
                 {
                     quest = new Quest(questInfo);
                 }
