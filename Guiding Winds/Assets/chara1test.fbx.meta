@@ -323,7 +323,7 @@ ModelImporter:
     - name: clavicle_scap_l
       parentName: clavicle_l
       position: {x: -0.001083237, y: 0.0011375266, z: -0.00007440456}
-      rotation: {x: 0.027066281, y: 0.0025885548, z: 0.9989277, w: -0.03747185}
+      rotation: {x: 0.027066281, y: 0.0025885552, z: 0.9989277, w: -0.037471857}
       scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
     - name: clavicle_scap_l_end
       parentName: clavicle_scap_l
@@ -1983,7 +1983,7 @@ ModelImporter:
     - name: pinky_03_bulge_r
       parentName: pinky_03_r
       position: {x: 0.000083462895, y: -0.00008378701, z: -0.0000043638424}
-      rotation: {x: -0.6970218, y: 0.016360132, z: -0.007606565, w: 0.7168229}
+      rotation: {x: -0.6970218, y: 0.016360134, z: -0.007606565, w: 0.716823}
       scale: {x: 1, y: 0.9999999, z: 0.99999994}
     - name: pinky_03_bulge_r_end
       parentName: pinky_03_bulge_r
@@ -2788,7 +2788,7 @@ ModelImporter:
     - name: FACIAL_R_NeckB2
       parentName: FACIAL_C_Neck1Root
       position: {x: 0.000701038, y: 0.00021993897, z: -0.000022694503}
-      rotation: {x: 0.13673466, y: 0.5490638, z: 0.11289187, w: 0.8167545}
+      rotation: {x: 0.13673468, y: 0.5490638, z: 0.112891875, w: 0.8167545}
       scale: {x: 1.0000001, y: 1, z: 1.0000001}
     - name: FACIAL_R_NeckB2_end
       parentName: FACIAL_R_NeckB2
@@ -3818,7 +3818,7 @@ ModelImporter:
     - name: FACIAL_L_ChinSide
       parentName: FACIAL_C_Jaw
       position: {x: -0.0003996622, y: 0.000088827546, z: 0.0010325975}
-      rotation: {x: -0.22070688, y: -0.37390602, z: -0.04995244, w: 0.8994373}
+      rotation: {x: -0.2207069, y: -0.37390602, z: -0.049952444, w: 0.8994373}
       scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
     - name: FACIAL_L_ChinSide_end
       parentName: FACIAL_L_ChinSide
@@ -6533,7 +6533,7 @@ ModelImporter:
     - name: FACIAL_L_12IPV_CheekOuter4
       parentName: FACIAL_C_FacialRoot
       position: {x: -0.0007379782, y: 0.00025220859, z: 0.00084496767}
-      rotation: {x: -0.048230466, y: 0.21504474, z: 0.034969516, w: 0.97478545}
+      rotation: {x: -0.048230473, y: 0.21504474, z: 0.034969524, w: 0.97478545}
       scale: {x: 0.9999999, y: 1, z: 1}
     - name: FACIAL_L_12IPV_CheekOuter4_end
       parentName: FACIAL_L_12IPV_CheekOuter4
@@ -7038,7 +7038,7 @@ ModelImporter:
     - name: FACIAL_L_CheekLower
       parentName: FACIAL_C_FacialRoot
       position: {x: -0.0005795435, y: -0.00037433635, z: 0.0008653477}
-      rotation: {x: 0.03454996, y: -0.42696086, z: -0.057741407, w: 0.9017631}
+      rotation: {x: 0.034549966, y: -0.42696086, z: -0.057741415, w: 0.9017631}
       scale: {x: 1, y: 1.0000001, z: 1}
     - name: FACIAL_L_12IPV_CheekL1
       parentName: FACIAL_L_CheekLower
@@ -7673,7 +7673,7 @@ ModelImporter:
     - name: FACIAL_L_12IPV_ForeheadIn7
       parentName: FACIAL_L_ForeheadIn
       position: {x: 0.00003268031, y: 0.0000045054408, z: 0.00014403678}
-      rotation: {x: 0.112512186, y: 0.03664432, z: 0.013379583, w: 0.9928843}
+      rotation: {x: 0.1125122, y: 0.03664432, z: 0.013379585, w: 0.9928843}
       scale: {x: 0.9999999, y: 1, z: 1.0000001}
     - name: FACIAL_L_12IPV_ForeheadIn7_end
       parentName: FACIAL_L_12IPV_ForeheadIn7
@@ -7838,7 +7838,7 @@ ModelImporter:
     - name: FACIAL_L_12IPV_ForeheadMid17
       parentName: FACIAL_L_ForeheadMid
       position: {x: 0.000050735547, y: -0.000052946012, z: 0.00016005624}
-      rotation: {x: -0.006039485, y: -0.061368305, z: 0.043004416, w: 0.99717003}
+      rotation: {x: -0.006039486, y: -0.061368305, z: 0.043004423, w: 0.99717003}
       scale: {x: 0.9999999, y: 0.99999994, z: 1.0000001}
     - name: FACIAL_L_12IPV_ForeheadMid17_end
       parentName: FACIAL_L_12IPV_ForeheadMid17
@@ -7888,7 +7888,7 @@ ModelImporter:
     - name: FACIAL_L_12IPV_ForeheadMid22
       parentName: FACIAL_L_ForeheadMid
       position: {x: -0.00003402386, y: -0.00011932885, z: 0.0001366635}
-      rotation: {x: 0.21842945, y: -0.05012108, z: 0.05570657, w: 0.9729713}
+      rotation: {x: 0.21842948, y: -0.05012108, z: 0.05570658, w: 0.9729713}
       scale: {x: 1, y: 0.9999999, z: 1}
     - name: FACIAL_L_12IPV_ForeheadMid22_end
       parentName: FACIAL_L_12IPV_ForeheadMid22
@@ -7973,7 +7973,7 @@ ModelImporter:
     - name: FACIAL_L_12IPV_ForeheadOut27
       parentName: FACIAL_L_ForeheadOut
       position: {x: -0.000118235635, y: 0.000036149522, z: 0.000037656595}
-      rotation: {x: -0.05300254, y: -0.09196254, z: 0.08136119, w: 0.9910166}
+      rotation: {x: -0.053002547, y: -0.09196254, z: 0.081361204, w: 0.9910166}
       scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
     - name: FACIAL_L_12IPV_ForeheadOut27_end
       parentName: FACIAL_L_12IPV_ForeheadOut27
@@ -8033,7 +8033,7 @@ ModelImporter:
     - name: FACIAL_L_ForeheadOutA1
       parentName: FACIAL_L_ForeheadOut
       position: {x: 0.000031798332, y: 0.000009239772, z: 0.000104499726}
-      rotation: {x: -0.059434876, y: -0.045639835, z: 0.032140564, w: 0.9966702}
+      rotation: {x: -0.059434883, y: -0.045639835, z: 0.03214057, w: 0.9966702}
       scale: {x: 0.99999994, y: 1, z: 0.9999999}
     - name: FACIAL_L_ForeheadOutA1_end
       parentName: FACIAL_L_ForeheadOutA1
@@ -8638,7 +8638,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_ForeheadSkin3
       parentName: FACIAL_C_FacialRoot
       position: {x: 0.00017258519, y: 0.00091183704, z: 0.0012613914}
-      rotation: {x: -0.13183366, y: 0.11176777, z: -0.04560286, w: 0.9838944}
+      rotation: {x: -0.13183367, y: 0.11176777, z: -0.045602866, w: 0.9838944}
       scale: {x: 0.99999994, y: 1.0000001, z: 1}
     - name: FACIAL_R_12IPV_ForeheadSkin3_end
       parentName: FACIAL_R_12IPV_ForeheadSkin3
@@ -8828,7 +8828,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_NasolabialF7
       parentName: FACIAL_C_FacialRoot
       position: {x: 0.00042604867, y: -0.00022552216, z: 0.0011848616}
-      rotation: {x: -0.03331114, y: 0.12584873, z: -0.36380184, w: 0.9223344}
+      rotation: {x: -0.033311144, y: 0.12584873, z: -0.36380187, w: 0.9223344}
       scale: {x: 1, y: 0.99999994, z: 1}
     - name: FACIAL_R_12IPV_NasolabialF7_end
       parentName: FACIAL_R_12IPV_NasolabialF7
@@ -8838,7 +8838,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_NasolabialF8
       parentName: FACIAL_C_FacialRoot
       position: {x: 0.00038213006, y: -0.00026166879, z: 0.001202241}
-      rotation: {x: -0.03331114, y: 0.12584896, z: -0.36380142, w: 0.9223345}
+      rotation: {x: -0.033311147, y: 0.12584896, z: -0.36380148, w: 0.9223345}
       scale: {x: 0.99999994, y: 0.9999998, z: 1}
     - name: FACIAL_R_12IPV_NasolabialF8_end
       parentName: FACIAL_R_12IPV_NasolabialF8
@@ -9438,7 +9438,7 @@ ModelImporter:
     - name: FACIAL_R_EyelidUpperB1
       parentName: FACIAL_R_EyelidUpperB
       position: {x: -0.00009556531, y: -0.000045017925, z: 0.00013553452}
-      rotation: {x: 0.01062295, y: -0.12140571, z: 0.086505555, w: 0.98876923}
+      rotation: {x: 0.010622952, y: -0.12140571, z: 0.08650557, w: 0.98876923}
       scale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
     - name: FACIAL_R_EyelidUpperB1_end
       parentName: FACIAL_R_EyelidUpperB1
@@ -9538,7 +9538,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_EyesackL4
       parentName: FACIAL_R_EyesackLower
       position: {x: -0.000047844536, y: -0.00006958739, z: 0.00003262435}
-      rotation: {x: 0.020425599, y: -0.19990268, z: -0.020425316, w: 0.97938985}
+      rotation: {x: 0.020425603, y: -0.19990268, z: -0.02042532, w: 0.97938985}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: FACIAL_R_12IPV_EyesackL4_end
       parentName: FACIAL_R_12IPV_EyesackL4
@@ -9718,7 +9718,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_ForeheadIn7
       parentName: FACIAL_R_ForeheadIn
       position: {x: -0.000018690447, y: 0.00000017709797, z: 0.00014873323}
-      rotation: {x: 0.112512186, y: -0.036644433, z: -0.013379548, w: 0.9928843}
+      rotation: {x: 0.1125122, y: -0.036644433, z: -0.01337955, w: 0.9928843}
       scale: {x: 0.99999994, y: 1.0000001, z: 1}
     - name: FACIAL_R_12IPV_ForeheadIn7_end
       parentName: FACIAL_R_12IPV_ForeheadIn7
@@ -10018,7 +10018,7 @@ ModelImporter:
     - name: FACIAL_R_12IPV_ForeheadOut27
       parentName: FACIAL_R_ForeheadOut
       position: {x: 0.00011945918, y: 0.000041970117, z: 0.000044151617}
-      rotation: {x: -0.053002603, y: 0.09196275, z: -0.08136166, w: 0.99101657}
+      rotation: {x: -0.05300261, y: 0.09196275, z: -0.081361674, w: 0.99101657}
       scale: {x: 0.9999998, y: 0.99999994, z: 0.9999998}
     - name: FACIAL_R_12IPV_ForeheadOut27_end
       parentName: FACIAL_R_12IPV_ForeheadOut27
@@ -10513,7 +10513,7 @@ ModelImporter:
     - name: FACIAL_R_Sideburn1
       parentName: FACIAL_C_FacialRoot
       position: {x: 0.0007755797, y: 0.00040260176, z: 0.0007232064}
-      rotation: {x: 0.11937308, y: -0.10584901, z: -0.004490833, w: 0.98718077}
+      rotation: {x: 0.1193731, y: -0.10584901, z: -0.0044908337, w: 0.98718077}
       scale: {x: 1, y: 1.0000002, z: 1.0000001}
     - name: FACIAL_R_Sideburn1_end
       parentName: FACIAL_R_Sideburn1
@@ -10608,6 +10608,196 @@ ModelImporter:
     - name: spine_04_latissimus_r_end
       parentName: spine_04_latissimus_r
       position: {x: -0, y: 0.000099999976, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_l_1
+      parentName: spine_05
+      position: {x: 0.0002447353, y: 0.00012773747, z: -0.00016228542}
+      rotation: {x: 0.06829494, y: -0.74852276, z: 0.044959772, w: 0.6580488}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_out_l_1
+      parentName: clavicle_l_1
+      position: {x: -0.0012751655, y: -0.000038212595, z: 0.00078554964}
+      rotation: {x: -0.0025885159, y: 0.027061054, z: 0.037471674, w: 0.9989279}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: clavicle_out_l_end_1
+      parentName: clavicle_out_l_1
+      position: {x: -0, y: 0.000100000005, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_scap_l_1
+      parentName: clavicle_l_1
+      position: {x: -0.001083237, y: 0.0011375266, z: -0.00007440428}
+      rotation: {x: 0.027066281, y: 0.0025885552, z: 0.9989277, w: -0.037471857}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: clavicle_scap_l_end_1
+      parentName: clavicle_scap_l_1
+      position: {x: -0, y: 0.00009999994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_l_1
+      parentName: clavicle_l_1
+      position: {x: -0.0018863226, y: -0.00000001343528, z: -0.00001763444}
+      rotation: {x: -0.026033904, y: -0.3846423, z: 0.011173132, w: 0.9226309}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: upperarm_correctiveRoot_l_1
+      parentName: upperarm_l_1
+      position: {x: -0.0000000010023359, y: -0.0000000035250558, z: -4.9360094e-10}
+      rotation: {x: 0.0000016134876, y: -0.00016138756, z: 0.000000820444, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: upperarm_bck_l_1
+      parentName: upperarm_correctiveRoot_l_1
+      position: {x: -0.00022019236, y: 0.00079993485, z: 0.000096403404}
+      rotation: {x: -0.5831057, y: 0.000087390916, z: 0.00012569479, w: 0.8123963}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: upperarm_bck_l_end_1
+      parentName: upperarm_bck_l_1
+      position: {x: -0, y: 0.00009999991, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_fwd_l_1
+      parentName: upperarm_correctiveRoot_l_1
+      position: {x: -0.00039007358, y: -0.0009253087, z: -0.0000346991}
+      rotation: {x: 0.75703096, y: -0.067578316, z: -0.0802943, w: 0.64489543}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: upperarm_fwd_l_end_1
+      parentName: upperarm_fwd_l_1
+      position: {x: -0, y: 0.0001000001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_in_l_1
+      parentName: upperarm_correctiveRoot_l_1
+      position: {x: -0.00086727686, y: -0.000207599, z: -0.00072837673}
+      rotation: {x: 0.912789, y: 0.0000013557727, z: -0.4084315, w: -0.000000657332}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999976}
+    - name: upperarm_in_l_end_1
+      parentName: upperarm_in_l_1
+      position: {x: -0, y: 0.0001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_out_l_1
+      parentName: upperarm_correctiveRoot_l_1
+      position: {x: -0.000045307384, y: -0.000025278394, z: 0.0005860107}
+      rotation: {x: -0.00000017566, y: 0.00016218828, z: 0.00000036594233, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: upperarm_out_l_end_1
+      parentName: upperarm_out_l_1
+      position: {x: -0, y: 0.0001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_pec_l_1
+      parentName: spine_05
+      position: {x: 0.0017551107, y: -0.0012524487, z: -0.001467918}
+      rotation: {x: 0.098792255, y: -0.7268522, z: 0.012317313, w: 0.6795398}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_pec_l_end_1
+      parentName: clavicle_pec_l_1
+      position: {x: -0, y: 0.00010000001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_pec_r_1
+      parentName: spine_05
+      position: {x: 0.0017559038, y: -0.001254448, z: 0.00146752}
+      rotation: {x: 0.7268674, y: 0.09879277, z: 0.67952335, w: -0.012324506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_pec_r_end_1
+      parentName: clavicle_pec_r_1
+      position: {x: -0, y: 0.000099999976, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_r_1
+      parentName: spine_05
+      position: {x: 0.00024474072, y: 0.00012774004, z: 0.00016228519}
+      rotation: {x: 0.74853694, y: 0.068296134, z: 0.658032, w: -0.044967588}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_out_r_1
+      parentName: clavicle_r_1
+      position: {x: 0.0012754339, y: 0.000038750226, z: -0.00078545813}
+      rotation: {x: -0.0025879277, y: 0.027070632, z: 0.037471354, w: 0.99892765}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: clavicle_out_r_end_1
+      parentName: clavicle_out_r_1
+      position: {x: -0, y: 0.0001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: clavicle_scap_r_1
+      parentName: clavicle_r_1
+      position: {x: 0.001082125, y: -0.0011361568, z: 0.00007472115}
+      rotation: {x: 0.027058206, y: 0.0025874523, z: 0.998928, w: -0.037470836}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: clavicle_scap_r_end_1
+      parentName: clavicle_scap_r_1
+      position: {x: -0, y: 0.00009999991, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_r_1
+      parentName: clavicle_r_1
+      position: {x: 0.001886335, y: -0.000000015174646, z: 0.00001758806}
+      rotation: {x: -0.026036197, y: -0.3846284, z: 0.011169513, w: 0.9226366}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: upperarm_correctiveRoot_r_1
+      parentName: upperarm_r_1
+      position: {x: -0.000000010813236, y: 0.0000000043259933, z: 0.000000006695045}
+      rotation: {x: 0.00000018253922, y: -0.0000024778717, z: -0.00000036880374, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: upperarm_bck_r_1
+      parentName: upperarm_correctiveRoot_r_1
+      position: {x: 0.00021185161, y: -0.0007969985, z: -0.000087466506}
+      rotation: {x: -0.58310723, y: -0.00000014290522, z: 0.0000008835814, w: 0.8123952}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
+    - name: upperarm_bck_r_end_1
+      parentName: upperarm_bck_r_1
+      position: {x: -0, y: 0.000099999976, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_fwd_r_1
+      parentName: upperarm_correctiveRoot_r_1
+      position: {x: 0.00038190853, y: 0.0009282242, z: 0.00004326227}
+      rotation: {x: 0.7570508, y: -0.067622624, z: -0.08010114, w: 0.6448915}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+    - name: upperarm_fwd_r_end_1
+      parentName: upperarm_fwd_r_1
+      position: {x: -0, y: 0.000100000165, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_in_r_1
+      parentName: upperarm_correctiveRoot_r_1
+      position: {x: 0.0008695129, y: 0.00020276525, z: 0.00073537364}
+      rotation: {x: 0.91281, y: 0.00000003321387, z: -0.4083844, w: 0.0000013488924}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: upperarm_in_r_end_1
+      parentName: upperarm_in_r_1
+      position: {x: -0, y: 0.000099999976, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm_out_r_1
+      parentName: upperarm_correctiveRoot_r_1
+      position: {x: 0.000044778495, y: 0.000030538886, z: -0.00057273154}
+      rotation: {x: -0.0000007424346, y: -0.0000052706505, z: 0.00000008914819, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: upperarm_out_r_end_1
+      parentName: upperarm_out_r_1
+      position: {x: -0, y: 0.000100000005, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_04_latissimus_l_1
+      parentName: spine_05
+      position: {x: 0.0020389839, y: 0.00041270093, z: -0.0020572357}
+      rotation: {x: 0.15716325, y: -0.7598941, z: -0.027689166, w: 0.6301539}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_04_latissimus_l_end_1
+      parentName: spine_05
+      position: {x: 0.0020185886, y: 0.00050760777, z: -0.0020332201}
+      rotation: {x: 0.15716325, y: -0.7598942, z: -0.027689163, w: 0.6301539}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_04_latissimus_r_1
+      parentName: spine_05
+      position: {x: 0.0020471236, y: 0.00041096014, z: 0.002051899}
+      rotation: {x: 0.75990134, y: 0.15716389, z: 0.6301451, w: 0.027689632}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine_04_latissimus_r_end_1
+      parentName: spine_04_latissimus_r_1
+      position: {x: -0, y: 0.000100000034, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: thigh_l
@@ -10873,7 +11063,7 @@ ModelImporter:
     - name: thigh_r
       parentName: pelvis
       position: {x: -0.00013441172, y: -0.000048334263, z: 0.0010418431}
-      rotation: {x: -0.022745308, y: 0.074046485, z: 0.9969521, w: 0.009285888}
+      rotation: {x: -0.022745308, y: 0.07404649, z: 0.9969521, w: 0.009285889}
       scale: {x: 0.99999994, y: 0.99999976, z: 0.9999979}
     - name: calf_r
       parentName: thigh_r
@@ -11175,196 +11365,6 @@ ModelImporter:
       position: {x: -0.0014259019, y: -0.0000000023096804, z: 0.000000014004615}
       rotation: {x: 0.00000004532069, y: 0.00000017189856, z: 0.013374244, w: 0.9999106}
       scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
-    - name: clavicle_l_1
-      parentName: spine_05_1
-      position: {x: -0.0011846736, y: 0.00013423756, z: -0.00016227437}
-      rotation: {x: 0.078299776, y: -0.74754226, z: 0.053756695, w: 0.6573888}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
-    - name: clavicle_out_l_1
-      parentName: clavicle_l_1
-      position: {x: -0.0012751655, y: -0.000038212595, z: 0.00078554964}
-      rotation: {x: -0.0025885159, y: 0.027061054, z: 0.037471674, w: 0.9989279}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: clavicle_out_l_end_1
-      parentName: clavicle_out_l_1
-      position: {x: -0, y: 0.000100000005, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: clavicle_scap_l_1
-      parentName: clavicle_l_1
-      position: {x: -0.001083237, y: 0.0011375266, z: -0.00007440428}
-      rotation: {x: 0.027066281, y: 0.0025885548, z: 0.9989277, w: -0.03747185}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
-    - name: clavicle_scap_l_end_1
-      parentName: clavicle_scap_l_1
-      position: {x: -0, y: 0.00009999994, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_l_1
-      parentName: clavicle_l_1
-      position: {x: -0.0018863226, y: -0.00000001343528, z: -0.00001763444}
-      rotation: {x: -0.026033904, y: -0.3846423, z: 0.011173132, w: 0.9226309}
-      scale: {x: 0.9999999, y: 1, z: 0.9999999}
-    - name: upperarm_correctiveRoot_l_1
-      parentName: upperarm_l_1
-      position: {x: -0.0000000010023359, y: -0.0000000035250558, z: -4.9360094e-10}
-      rotation: {x: 0.0000016134876, y: -0.00016138756, z: 0.000000820444, w: 1}
-      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
-    - name: upperarm_bck_l_1
-      parentName: upperarm_correctiveRoot_l_1
-      position: {x: -0.00022019236, y: 0.00079993485, z: 0.000096403404}
-      rotation: {x: -0.5831057, y: 0.000087390916, z: 0.00012569479, w: 0.8123963}
-      scale: {x: 0.99999994, y: 1, z: 0.99999994}
-    - name: upperarm_bck_l_end_1
-      parentName: upperarm_bck_l_1
-      position: {x: -0, y: 0.00009999991, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_fwd_l_1
-      parentName: upperarm_correctiveRoot_l_1
-      position: {x: -0.00039007358, y: -0.0009253087, z: -0.0000346991}
-      rotation: {x: 0.75703096, y: -0.067578316, z: -0.0802943, w: 0.64489543}
-      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
-    - name: upperarm_fwd_l_end_1
-      parentName: upperarm_fwd_l_1
-      position: {x: -0, y: 0.0001000001, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_in_l_1
-      parentName: upperarm_correctiveRoot_l_1
-      position: {x: -0.00086727686, y: -0.000207599, z: -0.00072837673}
-      rotation: {x: 0.912789, y: 0.0000013557727, z: -0.4084315, w: -0.000000657332}
-      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999976}
-    - name: upperarm_in_l_end_1
-      parentName: upperarm_in_l_1
-      position: {x: -0, y: 0.0001, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_out_l_1
-      parentName: upperarm_correctiveRoot_l_1
-      position: {x: -0.000045307384, y: -0.000025278394, z: 0.0005860107}
-      rotation: {x: -0.00000017566, y: 0.00016218828, z: 0.00000036594233, w: 1}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
-    - name: upperarm_out_l_end_1
-      parentName: upperarm_out_l_1
-      position: {x: -0, y: 0.0001, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: clavicle_pec_l_1
-      parentName: spine_05_1
-      position: {x: 0.00036207525, y: -0.0012050599, z: -0.0014679065}
-      rotation: {x: 0.10850447, y: -0.7254654, z: 0.021404631, w: 0.6793148}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
-    - name: clavicle_pec_l_end_1
-      parentName: clavicle_pec_l_1
-      position: {x: -0, y: 0.00010000001, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: clavicle_pec_r_1
-      parentName: spine_05_1
-      position: {x: 0.0003629247, y: -0.0012070361, z: 0.0014675314}
-      rotation: {x: 0.7254811, y: 0.10850515, z: 0.6792978, w: -0.021411384}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
-    - name: clavicle_pec_r_end_1
-      parentName: clavicle_pec_r_1
-      position: {x: -0, y: 0.000099999976, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: clavicle_r_1
-      parentName: spine_05_1
-      position: {x: -0.001184667, y: 0.00013423944, z: 0.00016229608}
-      rotation: {x: 0.7475567, y: 0.078301124, z: 0.6573716, w: -0.053764217}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
-    - name: clavicle_out_r_1
-      parentName: clavicle_r_1
-      position: {x: 0.0012754339, y: 0.000038750226, z: -0.00078545813}
-      rotation: {x: -0.0025879277, y: 0.027070632, z: 0.037471354, w: 0.99892765}
-      scale: {x: 1, y: 1.0000002, z: 1}
-    - name: clavicle_out_r_end_1
-      parentName: clavicle_out_r_1
-      position: {x: -0, y: 0.0001, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: clavicle_scap_r_1
-      parentName: clavicle_r_1
-      position: {x: 0.001082125, y: -0.0011361568, z: 0.00007472115}
-      rotation: {x: 0.027058206, y: 0.0025874523, z: 0.998928, w: -0.037470836}
-      scale: {x: 1, y: 1.0000001, z: 0.99999994}
-    - name: clavicle_scap_r_end_1
-      parentName: clavicle_scap_r_1
-      position: {x: -0, y: 0.00009999991, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_r_1
-      parentName: clavicle_r_1
-      position: {x: 0.001886335, y: -0.000000015174646, z: 0.00001758806}
-      rotation: {x: -0.026036197, y: -0.3846284, z: 0.011169513, w: 0.9226366}
-      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
-    - name: upperarm_correctiveRoot_r_1
-      parentName: upperarm_r_1
-      position: {x: -0.000000010813236, y: 0.0000000043259933, z: 0.000000006695045}
-      rotation: {x: 0.00000018253922, y: -0.0000024778717, z: -0.00000036880374, w: 1}
-      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
-    - name: upperarm_bck_r_1
-      parentName: upperarm_correctiveRoot_r_1
-      position: {x: 0.00021185161, y: -0.0007969985, z: -0.000087466506}
-      rotation: {x: -0.58310723, y: -0.00000014290522, z: 0.0000008835814, w: 0.8123952}
-      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999999}
-    - name: upperarm_bck_r_end_1
-      parentName: upperarm_bck_r_1
-      position: {x: -0, y: 0.000099999976, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_fwd_r_1
-      parentName: upperarm_correctiveRoot_r_1
-      position: {x: 0.00038190853, y: 0.0009282242, z: 0.00004326227}
-      rotation: {x: 0.7570508, y: -0.067622624, z: -0.08010114, w: 0.6448915}
-      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
-    - name: upperarm_fwd_r_end_1
-      parentName: upperarm_fwd_r_1
-      position: {x: -0, y: 0.000100000165, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_in_r_1
-      parentName: upperarm_correctiveRoot_r_1
-      position: {x: 0.0008695129, y: 0.00020276525, z: 0.00073537364}
-      rotation: {x: 0.91281, y: 0.00000003321387, z: -0.4083844, w: 0.0000013488924}
-      scale: {x: 0.99999994, y: 0.9999999, z: 1}
-    - name: upperarm_in_r_end_1
-      parentName: upperarm_in_r_1
-      position: {x: -0, y: 0.000099999976, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: upperarm_out_r_1
-      parentName: upperarm_correctiveRoot_r_1
-      position: {x: 0.000044778495, y: 0.000030538886, z: -0.00057273154}
-      rotation: {x: -0.0000007424346, y: -0.0000052706505, z: 0.00000008914819, w: 1}
-      scale: {x: 0.9999999, y: 1, z: 0.9999999}
-    - name: upperarm_out_r_end_1
-      parentName: upperarm_out_r_1
-      position: {x: -0, y: 0.000100000005, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: spine_04_latissimus_l_1
-      parentName: spine_05_1
-      position: {x: 0.00060131174, y: 0.0004670865, z: -0.0020572245}
-      rotation: {x: 0.16731215, y: -0.75772417, z: -0.019258864, w: 0.63046795}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
-    - name: spine_04_latissimus_l_end_1
-      parentName: spine_04_latissimus_l_1
-      position: {x: -0, y: 0.000100000005, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: spine_04_latissimus_r_1
-      parentName: spine_05_1
-      position: {x: 0.0006094937, y: 0.000465565, z: 0.0020519106}
-      rotation: {x: 0.75773126, y: 0.16731289, z: 0.63045925, w: 0.019259432}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: spine_04_latissimus_r_end_1
-      parentName: spine_04_latissimus_r_1
-      position: {x: -0, y: 0.000100000034, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: NurbsPath_003
       parentName: chara1test(Clone)
       position: {x: -0.013016208, y: 1.6157469, z: 0.16418752}
