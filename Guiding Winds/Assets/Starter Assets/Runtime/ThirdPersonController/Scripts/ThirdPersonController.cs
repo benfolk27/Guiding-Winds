@@ -131,6 +131,15 @@ namespace StarterAssets
         [Header("Centaur Transformation")]
         public CentaurTransformation centaurTransformation;
         public float jumpCount = 0;
+        public InputActionReference diveAction;
+        public float diveForwardSpeed = 12f;
+        public float diveDownSpeed = -35f;
+        public float diveHangTime = 0.15f;
+        private bool isDiving;
+        private float diveHangTimer;
+        public float centaurMoveSpeed = 4.0f;
+        public float centaurSprintSpeed = 9.0f;
+        public float centaurJumpHeight = 5.0f;
 
         private void SprintStarted(InputAction.CallbackContext context)
         {
@@ -174,6 +183,9 @@ namespace StarterAssets
             // sprinting stuff
             sprintAction.action.Enable();
             sprintAction.action.performed += SprintStarted;
+            
+            // centaur stuff
+            diveAction.action.Enable();
         }
 
         private void Update()
@@ -240,7 +252,9 @@ namespace StarterAssets
             // new addition: sprint check
             _input.sprint = IsSprinting;
             // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed = (_input.sprint && staminaBar.canSprint) ? SprintSpeed : MoveSpeed;
+            float currentMoveSpeed = centaurTransformation.isTransformed ? centaurMoveSpeed : MoveSpeed;
+            float currentSprintSpeed = centaurTransformation.isTransformed ? centaurSprintSpeed : SprintSpeed;
+            float targetSpeed = (_input.sprint && staminaBar.canSprint) ? currentSprintSpeed : currentMoveSpeed;
 
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
@@ -253,7 +267,7 @@ namespace StarterAssets
 
             float speedOffset = 0.1f;
             float inputMagnitude = _input.analogMovement ? _input.move.magnitude : 1f;
-
+            
             // accelerate or decelerate to target speed
             if (currentHorizontalSpeed < targetSpeed - speedOffset ||
                 currentHorizontalSpeed > targetSpeed + speedOffset)
@@ -279,7 +293,7 @@ namespace StarterAssets
 
             // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
             // if there is a move input rotate player when the player is moving
-            if (_input.move != Vector2.zero)
+            if (_input.move != Vector2.zero && !isDiving)
             {
                 _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
                                   _mainCamera.transform.eulerAngles.y;
@@ -292,7 +306,7 @@ namespace StarterAssets
 
 
             Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
-
+            _speed = isDiving ? diveForwardSpeed : _speed;
             // move the player
             _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
@@ -308,14 +322,11 @@ namespace StarterAssets
         private void JumpAndGravity()
         {
             float maxJumps = (centaurTransformation.isTransformed) ? 2 : 1;
+            float currentJumpHeight = (centaurTransformation.isTransformed) ? centaurJumpHeight : JumpHeight;
             if (Grounded)
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
-                if (_verticalVelocity <= 0.0f)
-                {
-                    jumpCount = 0;
-                }
 
                 // update animator if using character
                 if (_hasAnimator)
@@ -328,6 +339,8 @@ namespace StarterAssets
                 if (_verticalVelocity < 0.0f)
                 {
                     _verticalVelocity = -2f;
+                    jumpCount = 0;
+                    isDiving = false;
                 }
 
                 // Jump
@@ -336,7 +349,7 @@ namespace StarterAssets
                     jumpCount++;
                     _input.jump = false;
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    _verticalVelocity = Mathf.Sqrt(currentJumpHeight * -2f * Gravity);
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -355,13 +368,21 @@ namespace StarterAssets
             {
                 // reset the jump timeout timer
                 _jumpTimeoutDelta = JumpTimeout;
-
+                
+                // Dive
+                if (diveAction.action.IsPressed() && centaurTransformation.isTransformed && !isDiving)
+                {
+                    diveHangTimer = diveHangTime;
+                    isDiving = true;
+                    _verticalVelocity = 0f;
+                }
+                
                 if (_input.jump && jumpCount < maxJumps)
                 {
                     jumpCount++;
                     _input.jump = false;
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    _verticalVelocity = Mathf.Sqrt(currentJumpHeight * -2f * Gravity);
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -385,6 +406,19 @@ namespace StarterAssets
 
                 // if we are not grounded, do not jump
                 _input.jump = false;
+            }
+            
+            if (isDiving)
+            {
+                if (diveHangTimer > 0f)
+                {
+                    diveHangTimer -= Time.deltaTime;
+                    _verticalVelocity = 0f;
+                }
+                else
+                {
+                    _verticalVelocity = diveDownSpeed;
+                }
             }
 
             // apply gravity over time if above terminal (multiply by delta time twice to linearly speed up over time)

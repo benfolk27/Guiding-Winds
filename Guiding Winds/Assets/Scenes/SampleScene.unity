@@ -2234,9 +2234,17 @@ PrefabInstance:
       value: PlayerArmature
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: diveAction
+      value: 
+      objectReference: {fileID: 5025917096603596463, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: staminaBar
       value: 
       objectReference: {fileID: 1882100321}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+      propertyPath: diveForwardSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: centaurTransformation
       value: 
@@ -22059,6 +22067,18 @@ MonoBehaviour:
   untransformRate: 5
   transform: {fileID: 2612563952242725376, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   isTransformed: 0
+  sideDash: {fileID: 1992017353}
+--- !u!114 &1992017353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6976289564311847725, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+  m_PrefabInstance: {fileID: 188951975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188951976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e62594d0c1c44041b1489230454ecef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SideDash
 --- !u!195 &2017798599
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class CentaurTransformation : MonoBehaviour
     public float untransformRate = 10f;
     public InputActionReference transform;
     public bool isTransformed = false;
+    public SideDash sideDash;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +30,7 @@ public class CentaurTransformation : MonoBehaviour
     {
         if (!isTransformed)
         {
+            sideDash.enabled = true;
             if (transform.action.IsPressed())
             {
                 slider.gameObject.SetActive(true);
@@ -51,6 +53,7 @@ public class CentaurTransformation : MonoBehaviour
         }
         else
         {
+            sideDash.enabled = false;
             staminaSlider.value = max;
             timerSlider.value -= untransformRate * Time.deltaTime;
             if (timerSlider.value <= 0f)
