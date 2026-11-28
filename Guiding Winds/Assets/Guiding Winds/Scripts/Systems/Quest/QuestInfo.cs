@@ -25,7 +25,7 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
         public GameObject[] QuestStepPrefabs;
 
         [Header("Rewards")]
-        public int repReward;
+        public int RepReward;
         // currency reward?
 
         private void OnValidate()

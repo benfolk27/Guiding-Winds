@@ -41,6 +41,14 @@ namespace Assets.Guiding_Winds.Scripts.Systems.Quests
             OnQuestStateChange?.Invoke(quest);
         }
 
+        public event Action<string, int, QuestStepState> OnQuestStepStateChange;
+
+        public void QuestStepStateChange(string questId, int stepIndex, QuestStepState stepState)
+        {
+            OnQuestStepStateChange?.Invoke(questId, stepIndex, stepState);
+        }
+
+
         // Quest objective events
         public event Action<QuestObject> OnObjectCollected;
 
