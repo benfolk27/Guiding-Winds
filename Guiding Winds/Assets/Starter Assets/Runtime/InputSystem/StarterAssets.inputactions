@@ -332,8 +332,8 @@
                 {
                     "name": "",
                     "id": "1700c565-6d71-46c6-9529-b7a3da824658",
-                    "path": "<Keyboard>/e",
-                    "interactions": "Hold",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Transform",

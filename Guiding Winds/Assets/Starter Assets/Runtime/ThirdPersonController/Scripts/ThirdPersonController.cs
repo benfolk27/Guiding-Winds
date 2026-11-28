@@ -127,6 +127,10 @@ namespace StarterAssets
         public StaminaBar staminaBar;
         public InputActionReference sprintAction;
         private bool IsSprinting;
+        
+        [Header("Centaur Transformation")]
+        public CentaurTransformation centaurTransformation;
+        public float jumpCount = 0;
 
         private void SprintStarted(InputAction.CallbackContext context)
         {
@@ -303,10 +307,15 @@ namespace StarterAssets
 
         private void JumpAndGravity()
         {
+            float maxJumps = (centaurTransformation.isTransformed) ? 2 : 1;
             if (Grounded)
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
+                if (_verticalVelocity <= 0.0f)
+                {
+                    jumpCount = 0;
+                }
 
                 // update animator if using character
                 if (_hasAnimator)
@@ -324,6 +333,8 @@ namespace StarterAssets
                 // Jump
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
+                    jumpCount++;
+                    _input.jump = false;
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
@@ -345,6 +356,19 @@ namespace StarterAssets
                 // reset the jump timeout timer
                 _jumpTimeoutDelta = JumpTimeout;
 
+                if (_input.jump && jumpCount < maxJumps)
+                {
+                    jumpCount++;
+                    _input.jump = false;
+                    // the square root of H * -2 * G = how much velocity needed to reach desired height
+                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+                    // update animator if using character
+                    if (_hasAnimator)
+                    {
+                        _animator.SetBool(_animIDJump, true);
+                    }
+                }
                 // fall timeout
                 if (_fallTimeoutDelta >= 0.0f)
                 {

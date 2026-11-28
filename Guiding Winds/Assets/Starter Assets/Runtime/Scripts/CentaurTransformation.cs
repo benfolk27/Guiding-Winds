@@ -51,12 +51,12 @@ public class CentaurTransformation : MonoBehaviour
         }
         else
         {
+            staminaSlider.value = max;
             timerSlider.value -= untransformRate * Time.deltaTime;
             if (timerSlider.value <= 0f)
             {
                 isTransformed = false;
                 timerSlider.gameObject.SetActive(false);
-                staminaSlider.value = max;
             }
         }
     }
